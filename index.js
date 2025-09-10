@@ -1,42 +1,50 @@
-console.log('hi!');
+// const number1 = prompt('enter first number', 5);
+// const number2 = prompt('enter secons number', 3);
 
-const isWork = false;
+// console.log(' number1 = ', number1, typeof number1);
+// console.log(' number1 = ', number2, typeof number2);
 
-const myHeight = 1.80;
-console.log(myHeight);
+// // + - concatenation
+// const summa1 = number1 + number2;
+// alert(summa1);
 
-const isHaveICar = false;
+// const summa2 = +number1 + +number2;
+// alert(summa2);
 
-const timeWakeUp = 8;
-console.log(timeWakeUp);
+// const summa3 = Number(number1) + Number(number2);
+// alert(summa3);
 
-const amountDaysInWeek  = 7;
-console.log(amountDaysInWeek );
+// const substruck = Number(number1) - Number(number2);
+// alert(substruck);
+
+const firstNameProduct = prompt('enter what you want buy fisrt');
+const firstPriceProduct = prompt('enter price ' + firstNameProduct);
+
+const secondNameProduct = prompt('enter what you want buy second');
+const secondPriceProduct = prompt('enter price ' + secondNameProduct);
+
+const summaAllProduct = Number(firstPriceProduct) + Number(secondPriceProduct);
+
+alert('your buy:\n' + firstNameProduct + ' - ' + firstPriceProduct + 'Uah ' + "\n" + secondNameProduct + ' - ' + secondPriceProduct + 'Uah '
+    + "\n-------------------" + "\nfor payment " + summaAllProduct + 'Uah'
+)
 
 
-const titleMovie = 'Intertail';
-console.log(titleMovie);
-// titleMovie = 'Titanic';
+// const userName = prompt('write your name');
+// console.log(userName);
+// alert('Hi, ' + userName + '!');
 
-let myPet = 'dog, cat';
-console.log(myPet);
+// const currectYear = new Date().getFullYear();
+// console.log(typeof currectYear, currectYear);
 
-let firstName = 'Makar';
-console.log(firstName);
+// const userDateOfBirth = prompt('write your date of birth');
+// console.log(typeof userDateOfBirth, userDateOfBirth);
 
-let isAdult = false;
-let isWeekend = false;
-let isStudent = true;
+// // alert('thanks!')
 
-let yesrOfBirth = 1900;
-console.log(yesrOfBirth);
-yesrOfBirth = 2010;
-console.log(yesrOfBirth);
+// const userAge = currectYear - userDateOfBirth;
 
-let myFavoriteColor = 'black';
-console.log(firstName, myFavoriteColor);
+// alert(userName + ',' + ' to you ' + userAge + '!');
 
-let age = null;
-console.log(age);
-age = 15;
-console.log(age);
+// const userAgeThrough10Years = userAge + 10;
+// alert(userName + ',' + ' in 10 years you will be ' + userAgeThrough10Years + '!');
