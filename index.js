@@ -1,50 +1,74 @@
-// const number1 = prompt('enter first number', 5);
-// const number2 = prompt('enter secons number', 3);
+// const userName = prompt('enter your name');
+// const userAge = prompt('enter your age');
+// const userHavePets = true;
 
-// console.log(' number1 = ', number1, typeof number1);
-// console.log(' number1 = ', number2, typeof number2);
+// alert('My name is ' + userName + ', I am ' + userAge);
+// alert('after 10 years you got ' + (Number(userAge) + 10));
 
-// // + - concatenation
-// const summa1 = number1 + number2;
-// alert(summa1);
+// const bookAuthor = "King";
+// const bookName = "It";
+// const bookPages = 1246;
 
-// const summa2 = +number1 + +number2;
-// alert(summa2);
+// alert(
+//   'My favorite book:\n"' +
+//     bookName +
+//     '" by ' +
+//     bookAuthor +
+//     " (" +
+//     bookPages +
+//     " pages)"
+// );
 
-// const summa3 = Number(number1) + Number(number2);
-// alert(summa3);
+// const nameProduct = "Laptop";
+// const priceProduct = 57000;
+// const amountProduct = 3;
 
-// const substruck = Number(number1) - Number(number2);
-// alert(substruck);
+// const priceForAllProduct = priceProduct * amountProduct;
 
-const firstNameProduct = prompt('enter what you want buy fisrt');
-const firstPriceProduct = prompt('enter price ' + firstNameProduct);
+// alert('The cost of 3 items "' + nameProduct + '" is ' + priceForAllProduct + 'UAH')
 
-const secondNameProduct = prompt('enter what you want buy second');
-const secondPriceProduct = prompt('enter price ' + secondNameProduct);
+// Напишіть програму, яка запитує у користувача довжину сторін трикутника (три сторони), а потім обчислює та виводить його периметр.
 
-const summaAllProduct = Number(firstPriceProduct) + Number(secondPriceProduct);
+// const fisrtSideOfTriangle = prompt("enter fisrt side in sm");
+// const secondSideOfTriangle = prompt("enter second side in sm");
+// const thirdSideOfTriangle = prompt("enter third side in sm");
 
-alert('your buy:\n' + firstNameProduct + ' - ' + firstPriceProduct + 'Uah ' + "\n" + secondNameProduct + ' - ' + secondPriceProduct + 'Uah '
-    + "\n-------------------" + "\nfor payment " + summaAllProduct + 'Uah'
-)
+// const perimetr =
+//   Number(fisrtSideOfTriangle) +
+//   Number(secondSideOfTriangle) +
+//   Number(thirdSideOfTriangle);
 
+// alert(
+//   "Perimetr triangular with sides(" +
+//     fisrtSideOfTriangle +
+//     "," +
+//     secondSideOfTriangle +
+//     "," +
+//     thirdSideOfTriangle +
+//     ") = " +
+//     perimetr
+// );
 
-// const userName = prompt('write your name');
-// console.log(userName);
-// alert('Hi, ' + userName + '!');
+// Напишіть програму, яка запитує у користувача кількість кілометрів для поїздки та витрату пального на 100 км. Розрахувати загальну кільсть пального.
 
-// const currectYear = new Date().getFullYear();
-// console.log(typeof currectYear, currectYear);
+const distanseInKilomiters = prompt('enter distance of travel in km')
+const fuelFor100Km = prompt('enter fuel need for 100 km')
+const DISTANCE100 = 100;
 
-// const userDateOfBirth = prompt('write your date of birth');
-// console.log(typeof userDateOfBirth, userDateOfBirth);
+const tottalFuel = Number(distanseInKilomiters) * Number(fuelFor100Km) / DISTANCE100;
 
-// // alert('thanks!')
+console.log(tottalFuel);
 
-// const userAge = currectYear - userDateOfBirth;
+const isOscar = false;
 
-// alert(userName + ',' + ' to you ' + userAge + '!');
+const isRain = true;
 
-// const userAgeThrough10Years = userAge + 10;
-// alert(userName + ',' + ' in 10 years you will be ' + userAgeThrough10Years + '!');
+const score = 158;
+
+const userHasGrip = null;
+
+let test;
+
+test = 100;
+
+console.log(test);
