@@ -1,74 +1,57 @@
-// const userName = prompt('enter your name');
-// const userAge = prompt('enter your age');
-// const userHavePets = true;
+if (confirm("You want convert from USD to UAH?")) {
+  const howMuchUsdYouWantConvert = prompt("How much USD you Want Convert");
+  const courseUSD = prompt('Write course USD')
+  const howMuchUahHaveUser = Number(howMuchUsdYouWantConvert) * courseUSD;
+  alert("In UAH you have -" + howMuchUahHaveUser + "!");
+} else {
+ const howMuchUahYouWantConvert = prompt("How much UAH you Want Convert");
+ const courseUSD = prompt('Write course USD')
+ const howMuchUahHaveUser = Number(howMuchUahYouWantConvert) / courseUSD;
+ alert("In USD you have - " + howMuchUahHaveUser+"!")
+}
 
-// alert('My name is ' + userName + ', I am ' + userAge);
-// alert('after 10 years you got ' + (Number(userAge) + 10));
+// let amount = 0;
 
-// const bookAuthor = "King";
-// const bookName = "It";
-// const bookPages = 1246;
+// if (confirm("Is the Sun a star?")) {
+//   amount++;
+// }
 
-// alert(
-//   'My favorite book:\n"' +
-//     bookName +
-//     '" by ' +
-//     bookAuthor +
-//     " (" +
-//     bookPages +
-//     " pages)"
-// );
+// if (!confirm("Does the Moon orbit Mars?")) {
+//   amount++;
+// }
 
-// const nameProduct = "Laptop";
-// const priceProduct = 57000;
-// const amountProduct = 3;
+// if (confirm("Does Saturn have rings?")) {
+//   amount++;
+// }
 
-// const priceForAllProduct = priceProduct * amountProduct;
+// if (!confirm("Is Jupiter the smallest planet in the Solar System?")) {
+//   amount++;
+// }
 
-// alert('The cost of 3 items "' + nameProduct + '" is ' + priceForAllProduct + 'UAH')
+// if (confirm("Can astronauts float in space because of microgravity?")) {
+//   amount++;
+// }
 
-// Напишіть програму, яка запитує у користувача довжину сторін трикутника (три сторони), а потім обчислює та виводить його периметр.
+// alert("Congratulations your score - " + amount + "!");
 
-// const fisrtSideOfTriangle = prompt("enter fisrt side in sm");
-// const secondSideOfTriangle = prompt("enter second side in sm");
-// const thirdSideOfTriangle = prompt("enter third side in sm");
+// const whatUserWantForBD = prompt('what you want for birth day?')
+// const isWhatUserWantForBD = confirm('This what you want for birth day - ' + whatUserWantForBD + '!')
 
-// const perimetr =
-//   Number(fisrtSideOfTriangle) +
-//   Number(secondSideOfTriangle) +
-//   Number(thirdSideOfTriangle);
+// if (whatUserWantForBD) {
+//     alert('Good! I go find your present')
+// } else {
+//     alert('Think again')
+// }
 
-// alert(
-//   "Perimetr triangular with sides(" +
-//     fisrtSideOfTriangle +
-//     "," +
-//     secondSideOfTriangle +
-//     "," +
-//     thirdSideOfTriangle +
-//     ") = " +
-//     perimetr
-// );
+// const userName = prompt('Enter your name');
+// const isUserName = confirm('This your name - ' + userName + '?')
 
-// Напишіть програму, яка запитує у користувача кількість кілометрів для поїздки та витрату пального на 100 км. Розрахувати загальну кільсть пального.
+// console.log(userName);
+// console.log(isUserName);
 
-const distanseInKilomiters = prompt('enter distance of travel in km')
-const fuelFor100Km = prompt('enter fuel need for 100 km')
-const DISTANCE100 = 100;
+// if (isUserName) {
+//     alert('Hi, ' + userName + '!');
+// } else {
+//     alert('next time be careful!')
+// }
 
-const tottalFuel = Number(distanseInKilomiters) * Number(fuelFor100Km) / DISTANCE100;
-
-console.log(tottalFuel);
-
-const isOscar = false;
-
-const isRain = true;
-
-const score = 158;
-
-const userHasGrip = null;
-
-let test;
-
-test = 100;
-
-console.log(test);
