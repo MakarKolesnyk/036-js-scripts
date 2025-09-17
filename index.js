@@ -1,20 +1,23 @@
-const number = 452;
-const remainder = number%2;
+// false
+// undefiend
+console.log(Boolean(undefined)); // false
+// null
+console.log(Boolean(null)); // false
+// '' "" ``
+console.log(Boolean('')); // false
+// 0 +0 -0
+console.log(Boolean(0)); // false
+// NaN 
+console.log(Boolean(NaN));
 
-if (remainder === 0) {
-   console.log('doubles, even');
-} else {
-  console.log('unpaired, odd');
-  
-}
 
-const number7 = 452;
-const remainder7 = number%7;
+// ! NOT
+console.log(!false); //true
+console.log(!true); //false
 
-if (remainder7 === 0) {
-   console.log('multiply 7');
-} else {
-  console.log('not multiply 7');
-  
-}
+const str = '';
+ console.log(!str); //true !false
+
+ console.log(!undefined); // false -> true
+ 
  
