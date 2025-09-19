@@ -1,50 +1,84 @@
-// false
-// undefiend
-// null
-// '' "" ``
-// 0 +0 -0
-// NaN
+const userInput = prompt("Enter something");
 
-// const userAgeInput = prompt("Enter your age")
-// const userAge= Number(userAgeInput);
-// const startSchoolAge = 6;
-// const endSchoolAge = 17;
-
-// if (userAge>=startSchoolAge && userAge<=ndSchoolAge) {
-//  alert('school age')
-// } else {
-//   alert("Not school age")
-// }
-
-// const userNumberInput = prompt("Enter Number");
-// const userNumber = Number(userNumberInput);
-// const remainder3 = userNumber%3;
-// const remainder7 = userNumber%7;
-
-// if (remainder3 === 0 && remainder7 === 0) {
-//   alert("You WIN");
-// } else {
-//   alert("You LOSE");
-// }
-
-const userInput = prompt("Enter hours");
-console.log(userInput);
-const userNumber = Number(userInput); // NaN
-console.log(userNumber);
-
-// user enter cancel
-const error1 = (userInput = null);
-// user send empty string
-const error2 = userInput === "";
-// user write letters instead of numbers
-const error3 = Number.isNan(userNumber) === true;
-
-if (error1 || error2 || error3) {
-  alert("Error.\n" + userInput + "- not a number");
+if (userInput) {
+  alert("Good");
 } else {
-  if (userNumber >= 0 && userNumber <= 23) {
-    alert("thanks");
-  } else {
-    alert("Error.\n" + userInput + " - not a hours");
-  }
+  alert("error");
 }
+// const num1 = 12;
+// const num2 = 3;
+// const num3 = 4;
+
+// if (num1 %num2 ===0 && num1 %num3 ===0) {
+//   alert("Good")
+// } else {
+//   alert("Error")
+// }
+
+// const num1 = 100;
+// const num2 = 200;
+
+// if (num1 %num2 === 0 || num2 %num1 ===0) {
+//   alert("good")
+// } else {
+//   alert("Error")
+// }
+// const num1 = 1;
+// const num2 = 1;
+// const num3 = 1;
+
+// if (num1 === num2 && num1 === num3) {
+//   alert("equal");
+// } else if (num3 > num1 && num3 > num2) {
+//   alert(num3);
+// } else if (num2 > num1 && num2 > num3) {
+//   alert(num2);
+// } else {
+//   alert(num1);
+// }
+
+// const userRole = prompt("Enter your role")
+
+// if (userRole === null || userRole === '') {
+//   alert("try again")
+// } else if (userRole === 'admin') {
+//   alert("You have full permission")
+// } else {
+//   alert("You don\'t have permission")
+// }
+// const userNumberOfWeek = prompt("Enter number from 1-7")
+// const userNumberInput = Number(userNumberOfWeek)
+
+// if (userNumberOfWeek === null || Number.isNaN(userNumberInput) || userNumberInput >7 || userNumberInput < 1) {
+//   alert("try again")
+// } else if (userNumberInput >= 1 && userNumberInput <= 5) {
+//   alert("work day")
+// } else {
+//   alert("Weekend")
+// }
+// const userHour = prompt("Enter hour")
+// const userHourNumber = Number(userHour)
+
+// if (userHour === null || Number.isNaN(userHourNumber) || userHourNumber >23 || userHourNumber < 0) {
+// alert("try again")
+// } else if (userHourNumber >= 7 && userHourNumber < 12) {
+//   alert("Now morning")
+// } else if (userHourNumber < 7 || userHourNumber >= 23) {
+//   alert("Now night")
+// } else if (userHourNumber >= 12 && userHourNumber <19) {
+//   alert("Now day")
+// } else {
+//   alert("Now evening")
+// }
+// const userInput = prompt("Enter your number");
+// const userNumber = Number(userInput);
+// console.log(typeof userInput);
+// if (userInput === null || Number.isNaN(userNumber)) {
+//   alert("try again");
+// } else if (userNumber === 0) {
+//   alert("Zero");
+// } else if (userNumber > 0) {
+//   alert("positive number");
+// } else if (userNumber < 0) {
+//   alert("Negative number");
+// }
