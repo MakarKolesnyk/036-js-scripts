@@ -1,84 +1,52 @@
-const userInput = prompt("Enter something");
+const userFisrtInput = prompt("enter 1 side")
+const userSecondInput = prompt("enter 2 side")
 
-if (userInput) {
-  alert("Good");
-} else {
-  alert("error");
-}
-// const num1 = 12;
-// const num2 = 3;
-// const num3 = 4;
+const titleFigure = (userFisrtInput === userSecondInput) ? 'square' : 'rectangle'
+alert(titleFigure)
+// const usetNumberInput = prompt("enter number")
+// const userNumber = Number(usetNumberInput)
+// const absoluteValue = (userNumber >= 0) ? userNumber : -userNumber;
+// alert(absoluteValue)
 
-// if (num1 %num2 ===0 && num1 %num3 ===0) {
-//   alert("Good")
+
+// const priceTicket = 100;
+
+// const userAgeInput = prompt("enter age")
+// const userAge = Number(userAgeInput);
+
+// const sale = (userAge < 18 || userAge >= 65) ? 10 : 0;
+
+// const summaCheck = priceTicket - (priceTicket*sale/100)
+
+// alert(summaCheck)
+// const userNumberinput = prompt("Enter Number")
+// let wordEvenOdd = (Number(userNumberinput)%2 === 0) ? 'even' : 'odd' ;
+
+// alert(userNumberinput + ' - ' + wordEvenOdd)
+
+// const summaInput = prompt("Enter summa");
+// const summa = Number(summaInput);
+// const minSumma = 1000;
+
+// const delivery = (summa > minSumma) ? 0 : 50;
+
+// if (summa >= minSumma) {
+//   delivery = 0;
 // } else {
-//   alert("Error")
+//   delivery = 50;
 // }
 
-// const num1 = 100;
-// const num2 = 200;
+// alert("For pay = " + (summa + delivery));
+// const userFisrtNumberInput = prompt("enter first number");
+// const userSecondNumberInput = prompt("enter second number");
 
-// if (num1 %num2 === 0 || num2 %num1 ===0) {
-//   alert("good")
+// const userFirstNumber = Number(userFisrtNumberInput);
+// const userSecondNumber = Number(userSecondNumberInput);
+
+// if (userFirstNumber > 0 && userSecondNumber > 0) {
+//   alert("This two posetive numbers")
+// } else if (userFirstNumber < 0 && userSecondNumber < 0) {
+//   alert("This negative numbers")
 // } else {
-//   alert("Error")
-// }
-// const num1 = 1;
-// const num2 = 1;
-// const num3 = 1;
-
-// if (num1 === num2 && num1 === num3) {
-//   alert("equal");
-// } else if (num3 > num1 && num3 > num2) {
-//   alert(num3);
-// } else if (num2 > num1 && num2 > num3) {
-//   alert(num2);
-// } else {
-//   alert(num1);
-// }
-
-// const userRole = prompt("Enter your role")
-
-// if (userRole === null || userRole === '') {
-//   alert("try again")
-// } else if (userRole === 'admin') {
-//   alert("You have full permission")
-// } else {
-//   alert("You don\'t have permission")
-// }
-// const userNumberOfWeek = prompt("Enter number from 1-7")
-// const userNumberInput = Number(userNumberOfWeek)
-
-// if (userNumberOfWeek === null || Number.isNaN(userNumberInput) || userNumberInput >7 || userNumberInput < 1) {
-//   alert("try again")
-// } else if (userNumberInput >= 1 && userNumberInput <= 5) {
-//   alert("work day")
-// } else {
-//   alert("Weekend")
-// }
-// const userHour = prompt("Enter hour")
-// const userHourNumber = Number(userHour)
-
-// if (userHour === null || Number.isNaN(userHourNumber) || userHourNumber >23 || userHourNumber < 0) {
-// alert("try again")
-// } else if (userHourNumber >= 7 && userHourNumber < 12) {
-//   alert("Now morning")
-// } else if (userHourNumber < 7 || userHourNumber >= 23) {
-//   alert("Now night")
-// } else if (userHourNumber >= 12 && userHourNumber <19) {
-//   alert("Now day")
-// } else {
-//   alert("Now evening")
-// }
-// const userInput = prompt("Enter your number");
-// const userNumber = Number(userInput);
-// console.log(typeof userInput);
-// if (userInput === null || Number.isNaN(userNumber)) {
-//   alert("try again");
-// } else if (userNumber === 0) {
-//   alert("Zero");
-// } else if (userNumber > 0) {
-//   alert("positive number");
-// } else if (userNumber < 0) {
-//   alert("Negative number");
+//   alert("This difference numbers")
 // }
