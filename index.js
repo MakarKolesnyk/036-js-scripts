@@ -1,27 +1,35 @@
 const massage = `write language like want to speak
-Ukraine - ua
-English- en
-Poland - pl
-Spainish - es
+1) Ukraine - ua
+2) English- en
+3) Poland - pl
+4) Spainish - es
 `;
 
 const lang = prompt(massage);
 
 switch (lang) {
   case "ua":
+  case "1":
+  case "ukraine":
     alert("Привiт");
     break;
   case "en":
+  case "2":
+  case "english":
     alert("Hello");
     break;
   case "pl":
+  case "3":
+  case "poland":
     alert("Cześć");
     break;
   case "es":
+  case "4":
+  case "spanish":
     alert("Hola");
     break;
   default:
-     alert("launguage not support");
+    alert("launguage not support");
     break;
 }
 
