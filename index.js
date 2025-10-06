@@ -14,6 +14,7 @@ while (true) {
   if (userInput === null) {
     alert("Dont cancel");
     continue;
+    alert("After continue") // this row will not work
   }
   if (Number(userInput === secretNumber)) {
     alert("You Win");
