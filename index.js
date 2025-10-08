@@ -1,13 +1,29 @@
-function logMessage(message) {
-  console.log(message);
-}
+// function logSqareNumber (num) {
+//   console.log(num*num);
+// }
 
-logMessage(123);
-logMessage("message from code");
+// logSqareNumber(2)
+// logSqareNumber(5)
 
-function logForUser(userName, word) {
-  console.log(`${word}, ${userName}`);
+// function logNumbersDiapazon (start, end) {
+// for(let i = start; i<end; i++) {
+//   console.log(i);
+// }
+// }
+
+// logNumbersDiapazon(1, 5)
+
+/**
+ * draw multiple times thing
+ * @param {Number} times default value 1
+ * @param {string} picture default value ':)'
+ */
+function logDrawsThings(times=1, picture=":)") {
+  for (let i = 1; i <= times; i++) {
+    console.log(i, picture);
+  }
 }
-logForUser("Bill", "Hi");
-logForUser("Tom", "Chiao");
-logForUser("Anna", "Halo");
+logDrawsThings(5, "=^.^=");
+logDrawsThings(5);
+logDrawsThings(undefined,"=^.^=");
+logDrawsThings();
