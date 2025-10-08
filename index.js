@@ -1,29 +1,13 @@
-// function logSqareNumber (num) {
-//   console.log(num*num);
-// }
-
-// logSqareNumber(2)
-// logSqareNumber(5)
-
-// function logNumbersDiapazon (start, end) {
-// for(let i = start; i<end; i++) {
-//   console.log(i);
-// }
-// }
-
-// logNumbersDiapazon(1, 5)
-
 /**
- * draw multiple times thing
- * @param {Number} times default value 1
- * @param {string} picture default value ':)'
+ * 
+ * @param {number} num1 defoult 0
+ * @param {number} num2 defoult 0
+ * @returns {number}
  */
-function logDrawsThings(times=1, picture=":)") {
-  for (let i = 1; i <= times; i++) {
-    console.log(i, picture);
-  }
+function addTwoNumbers (num1=0, num2=0) {
+  const summa = num1 + num2;
+  return summa;
 }
-logDrawsThings(5, "=^.^=");
-logDrawsThings(5);
-logDrawsThings(undefined,"=^.^=");
-logDrawsThings();
+
+const result = addTwoNumbers(7, 2)
+console.log(result);
