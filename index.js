@@ -1,117 +1,110 @@
-// /**
-//  * get area of sqaure
-//  * @param {number} side defoult = 0
-//  * @returns {number}
-//  */
-// function getAreaSquare(side = 0) {
-//   const getArea = side * side;
-//   return getArea;
+// функція яка переводить кілометри в метри
+
+// function getMetrFromKm(km) {
+//   return km * 1000;
 // }
 
-// const area = getAreaSquare(5);
-// console.log(area);
+// console.log(getMetrFromKm(5));
 
-// /**
-//  * get summa diapozan of numbers
-//  * @param {number} start defoult = 0
-//  * @param {number} end defoult = 0
-//  * @returns {number}
-//  */
-// function getSummaDiapazon(start = 0, end = 0) {
-//   let summa = 0;
-//   for (let i = start; i < end; i++) {
-//     summa += i;
+// функція приймає три числа і повертає true якщо всі три числа однакові,  інакше - false
+
+// function isThreeNumEqual (number1, number2, number3) {
+//   return number1===number2 && number1===number3;
+// }
+
+// console.log(isThreeNumEqual(1, 2, 1));
+
+// функція приймає номер дня тижня і повертає слово
+// weekend - якщо 6 або 7
+// workday - в усіх інших випадках
+
+// function getNameOfWeek (number) {
+//   return number > 5 ? 'weekend' : 'workday';
+// }
+
+// console.log(getNameOfWeek(3));
+
+// Функція, яка за оцінкою повертає текст: "Погано", "Нормально", "Добре", "Відмінно"
+// "Невірні данні
+
+// function getNameGrade(grade) {
+//   if (grade <= 0 || grade > 12) {
+//     return "Невірні данні";
 //   }
-//   return summa;
-// }
-
-// const result =getSummaDiapazon(1, 5);
-// console.log(result);
-
-// /**
-//  * get sing from number posetive, negative or zero
-//  * @param {number} number defoult = 0
-//  * @returns {string}
-//  */
-// function getSignNumber(number=0) {
-//   if (number > 0) {
-//     return "posetive";
+//   if (grade <= 4) {
+//     return "Погано"
 //   }
-//   if (number < 0) {
-//     return "negative";
+//   if (grade <=7) {
+//     return "Нормально"
 //   }
-//   return "zero";
-// }
-
-// console.log(getSignNumber(1));
-// console.log(getSignNumber(-1));
-// console.log(getSignNumber(0));
-
-// /**
-//  * get number and say even or odd
-//  * @param {Number} number defoult 0
-//  * @returns {string}
-//  */
-// function getEvenOrOdd1(number = 0) {
-//   if (number % 2 === 0) {
-//     return "even";
+//   if (grade <10) {
+//     return "Добре"
 //   }
-//   return "odd";
+//   return "Відмінно"
 // }
 
-// function getEvenOrOdd2(number) {
-//   return number % 2 === 0 ? "even" : "odd";
+// console.log(getNameGrade(12));
+
+// функція приймає фунти, повертає кілограми
+// 1 фунт = 0.45359237 kg
+
+// function getKgFromPound (pound, ONE_POUND=0.45359237) {
+//   return pound * ONE_POUND
 // }
 
-// console.log(getEvenOrOdd1(8));
-// console.log(getEvenOrOdd2(7));
+// console.log(getKgFromPound(10, 0.45));
 
-// /**
-//  * get two number and back big
-//  * @param {number1} number1
-//  * @param {number} number2
-//  * @returns {string}
-//  */
-// function getTwoNumbersBackBig(number1, number2) {
-//   if (number1 > number2) {
-//     return `${number1} bigger`;
+// function getPoundFromKg (kg, ONE_POUND=0.45359237) {
+//   return kg / ONE_POUND
+// }
+
+// console.log(getPoundFromKg(1, 0.45));
+
+// функція перевіряє чи два числа закінчуються однаковою цифрою
+
+// function isEqualLastDigit(num1, num2) {
+//   return num1%10 === num2%10
+// }
+
+// console.log(isEqualLastDigit(423423, 242423423));
+
+//функція повертає суму всіх непарних чисел в заданому діапазоні
+
+// function getSummaOdd(start, end) {
+//   let summa =0;
+//   for (let i = start; i <= end; i++) {
+//    if (i%2===1) {
+//     summa += i
+//    }
 //   }
-//   if (number1 < number2) {
-//     return `${number2} bigger`;
-//   }
-//   return number1;
+//   return summa
 // }
 
-// console.log(getTwoNumbersBackBig(1, 4));
-// console.log(getTwoNumbersBackBig(5, 1));
-// console.log(getTwoNumbersBackBig(3, 3));
+// console.log(getSummaOdd(1, 5));
 
-// function getTwoNumbersBackBig(number1, number2) {
-//   return number1 >= number2 ? number1 : number2
+// функція приймає вік людини і рахує скільки років лишилося до повноліття і виводить вам лишилося n роки
+// за замовчуванням повноліття = 18 років
+// якщо  вже повнолітній - виводимо ви вже повнолітній
+
+// function getYearToAdult(age, adult = 18) {
+//   return adult <= age ? 'ви вже повнолітній' : `вам лишилося ${adult - age} роки до повноліття`
 // }
 
-// console.log(getTwoNumbersBackBig(1, 300));
-// console.log(getTwoNumbersBackBig(400, 300));
-// console.log(getTwoNumbersBackBig(1, 1));
+// console.log(getYearToAdult(16));
 
-/**
- * get three number and back smaller
- * @param {number} number1 
- * @param {number} number2 
- * @param {number} number3 
- * @returns string
- */
-function getThreeNumberBackSmall (number1, number2, number3) {
-  if(number1 <= number2 || number1 <= number3) {
-    return `${number1} smaller`
-  }
-  if (number2 < number1 || number2 < number3) {
-    return `${number2} smaller`
-  }
- return `${number3} smaller`
+// функція приймає ціну піци і кількість друзів і повертає скільки повинен заплатити кожен з них
+
+// function calcCash (price, howPeople) {
+//   return price / howPeople
+// }
+
+// console.log(calcCash(123, 8));
+
+// функція перевіряє чи є одне число квадратом іншого
+
+function checkSquare(num1, num2) {
+  return num1 * num1 === num2 || num2 * num2 === num1;
 }
 
-console.log(getThreeNumberBackSmall(1, 2 ,3));
-console.log(getThreeNumberBackSmall(2, 3 ,4));
-console.log(getThreeNumberBackSmall(3, 4 ,5));
-console.log(getThreeNumberBackSmall(4, 4 ,4));
+console.log(checkSquare(16, 4));
+
