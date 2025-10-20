@@ -1,36 +1,45 @@
-// object
+// const phone = {
+//   brand: "iphone",
+//   model: "14 Pro",
+//   price: 35499,
+//   getDetails() {
+//     return `${this.brand} ${this.model} costs ₴${this.price} color: ${this.color}`;
+//   },
+// };
 
-const user1 = {
-  firstName: "Brad",
-  lastName: "pitt",
-  age: 32,
-  isMale: true,
-};
+// console.log(phone);
+// console.log(phone.getDetails());
 
-// console.log(user1);
-// console.log(user1.firstName);
+// phone.color = "red";
+// console.log(phone.getDetails());
 
-// const object = new Object({key: 12})
-// console.log(object);
-const book = {
-  tittle: "It",
-  author: "Stiven King",
-  yearCreate: 1982,
-  isReading: false,
-  getInfo(){
-    return `${this.author} "${this.tittle}", ${this.yearCreate}`
+
+// const country = {
+//   Name: "China",
+//   capital: 'Beijing',
+//   area: 9596961,
+//   population: 1408280000,
+//   getDescribe (){
+//     return `The ${this.capital} is capital of ${this.Name}`
+//   },
+//   getDestination (){
+//     return `Destination = ${this.population / this.area}`
+//   }
+// }
+// console.log(country.getDescribe());
+// console.log(country.getDestination());
+
+
+const rectangle = {
+  width: 10,
+  height: 10,
+  getPerimetr (){
+    return `Perimetr = ${this.height + this.width * 2}`
   },
-  "two words": 'value two words'
-};
+  getArea (){
+    return `Area = ${this.height * this.width}`
+  }
+}
 
-console.log(book.getInfo());
-book["two words"] = 121212
-console.log(book["two words"]);
-console.log(book["isReading"]);
-console.log(book["yearCreate"]);
-
-console.log(book);
-// addd new property
-book.pages = 845;
-// delete property
-delete book.pages;
+console.log(rectangle.getPerimetr());
+console.log(rectangle.getArea());
