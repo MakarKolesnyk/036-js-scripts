@@ -1,45 +1,44 @@
-// const phone = {
-//   brand: "iphone",
-//   model: "14 Pro",
-//   price: 35499,
-//   getDetails() {
-//     return `${this.brand} ${this.model} costs ₴${this.price} color: ${this.color}`;
-//   },
-// };
+// constructor
 
-// console.log(phone);
-// console.log(phone.getDetails());
-
-// phone.color = "red";
-// console.log(phone.getDetails());
-
-
-// const country = {
-//   Name: "China",
-//   capital: 'Beijing',
-//   area: 9596961,
-//   population: 1408280000,
-//   getDescribe (){
-//     return `The ${this.capital} is capital of ${this.Name}`
-//   },
-//   getDestination (){
-//     return `Destination = ${this.population / this.area}`
-//   }
-// }
-// console.log(country.getDescribe());
-// console.log(country.getDestination());
-
-
-const rectangle = {
-  width: 10,
-  height: 10,
-  getPerimetr (){
-    return `Perimetr = ${this.height + this.width * 2}`
-  },
-  getArea (){
-    return `Area = ${this.height * this.width}`
-  }
+/**
+ *
+ * @param {string} name
+ * @param {number} age
+ */
+function User(name, age){
+    this.name = name;
+    this.age = age;
+    this.getInfo=function(){
+        return `${this.name} is ${this.age} years old`
+    }
 }
 
-console.log(rectangle.getPerimetr());
-console.log(rectangle.getArea());
+// instance
+const user1 = new User('Fred', 12)
+console.log(user1.getInfo());
+const user2 = new User('Anna', 18)
+console.log(user2.getInfo());
+const user3 = new User('Andrey', 22)
+console.log(user3.getInfo());
+
+/**
+ *
+ * @param {string} brand
+ * @param {string} model
+ * @param {number} price
+ */
+function Phone(brand, model, price) {
+  this.brand = brand;
+  this.model = model;
+  this.price = price;
+  this.getDetails = function () {
+    return `${brand} ${model} coasts ₴${price}`;
+  };
+}
+
+const phone1 = new Phone('Iphone', '14 Pro', 25000)
+console.log(phone1.getDetails());
+const phone2 = new Phone('Nokia', '3310', 500)
+console.log(phone2.getDetails());
+const phone3 = new Phone('Samsung', 's25 ultra', 35000)
+console.log(phone3.getDetails());
