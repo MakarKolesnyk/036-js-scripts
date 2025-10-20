@@ -1,44 +1,41 @@
-// constructor
+// function Movie (tittle, director, releaseYear){
+//     this.tittle = tittle;
+//     this.director = director;
+//     this.releaseYear = releaseYear;
+//     this.getPoster=function(){
+//         return `${tittle} directed by ${director}, ${releaseYear}`
+//     }
+//     this.toString = function (){
+//         return this.tittle;
+//     }
+// }
 
-/**
- *
- * @param {string} name
- * @param {number} age
- */
-function User(name, age){
-    this.name = name;
-    this.age = age;
-    this.getInfo=function(){
-        return `${this.name} is ${this.age} years old`
-    }
+// const movie1 = new Movie("Titanic", "James Cameron", 1997)
+// console.log(movie1.toString());
+// const movie2 = new Movie("Avengers: Endgame", "Anthony Russo, Joe Russo", 2019)
+// console.log(movie2.getPoster());
+// const movie3 = new Movie("Oppenheimer", "Christopher Nolan", 2023)
+// console.log(movie3.getPoster());
+
+// alert(movie1)
+
+function City(name,country,population) {
+  this.name = name;
+  this.country = country;
+  this.population = population;
+  this.toString = function(){
+    return `city is ${name} in country ${country}`
+  }
+  this.getFullInfo = function(){
+    return `city is ${name} in country ${country} with a population ${population}`
+  }
 }
 
-// instance
-const user1 = new User('Fred', 12)
-console.log(user1.getInfo());
-const user2 = new User('Anna', 18)
-console.log(user2.getInfo());
-const user3 = new User('Andrey', 22)
-console.log(user3.getInfo());
-
-/**
- *
- * @param {string} brand
- * @param {string} model
- * @param {number} price
- */
-function Phone(brand, model, price) {
-  this.brand = brand;
-  this.model = model;
-  this.price = price;
-  this.getDetails = function () {
-    return `${brand} ${model} coasts ₴${price}`;
-  };
-}
-
-const phone1 = new Phone('Iphone', '14 Pro', 25000)
-console.log(phone1.getDetails());
-const phone2 = new Phone('Nokia', '3310', 500)
-console.log(phone2.getDetails());
-const phone3 = new Phone('Samsung', 's25 ultra', 35000)
-console.log(phone3.getDetails());
+const city1 = new City ('New York', 'USA', 8467513);
+console.log(city1);
+console.log(city1.toString());
+const city2 = new City ('Kiev', 'Ukraine', 100000);
+console.log(city2);
+console.log(city2.toString());
+alert(city1)
+alert(city2)
