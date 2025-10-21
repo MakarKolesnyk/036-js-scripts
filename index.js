@@ -7,16 +7,13 @@ function User(name, age, isMale) {
   this.isMale = isMale;
 }
 
-const userPrototype = {
-  getInfo() {
-    return `${this.name} is ${this.age} years old`;
-  },
-  getGender() {
+User.prototype.getGender = function() {
     return this.isMale ? "male" : "female";
-  },
-};
+  };  
 
-User.prototype = userPrototype;
+User.prototype.getInfo = function() {
+    return `${this.name} is ${this.age} years old`;
+  }
 
 const user1 = new User("Alex", 15, true);
 console.log(user1);
