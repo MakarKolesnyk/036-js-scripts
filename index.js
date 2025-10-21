@@ -1,83 +1,41 @@
-// const object = {};
-// console.log(object);
+// const user = {
+//   name: "Bred",
+// };
 
-// function User(name, age, isMale) {
-//   this.name = name;
-//   this.age = age;
-//   this.isMale = isMale;
+// const person = {
+//   name: "Anna"
 // }
 
-// const userPrototype = {
-//   getInfo() {
-//     return `${this.name} is ${this.age} years old`;
+// const userProto = {
+//   say() {
+//     return `my name is ${this.name}`;
 //   },
-//   getGender() {
-//     return this.isMale ? "male" : "female";
+//   walk() {
+//     return `i am walking`;
 //   },
 // };
 
-// function UserPrototype() {
-//   this.getInfo = function () {
-//     return `${this.name} is ${this.age} years old`;
-//   };
-//   this.getGender = function () {
-//     return this.isMale ? "male" : "female";
-//   };
-// }
+// person.__proto__ = userProto;
+// user.__proto__ = userProto;
 
-// User.prototype = new UserPrototype();
+// console.log(user);
+// console.log(user.say());
+// console.log(user.walk());
+// console.log(person);
+// console.log(person.say());
+// console.log(person.walk());
 
-// const user1 = new User("Alex", 15, true);
-// console.log(user1);
-// console.log(user1.getInfo());
-// console.log(user1.getGender());
-// const user2 = new User("Anna", 25, false);
-// console.log(user2.getInfo());
+const event = {
+  tittle: "festival",
+};
 
-// function Circle(r) {
-//   this.r = r;
-// }
+const eventProto = {
+  showTittle() {
+    return this.tittle;
+  },
+};
 
-// function CirclePrototype() {
-//   this.getArea = function () {
-//     return `Area ${Math.PI * this.r * this.r}`;
-//   };
-//   this.getPerimetr = function () {
-//     return `perimetr ${2 * Math.PI * this.r}`;
-//   };
-//   this.getDiametr = function () {
-//     return `diametr ${2 * this.r}`;
-//   };
-// }
+event.__proto__ = eventProto;
 
-// Circle.prototype = new CirclePrototype();
-
-// const circle = new Circle(10);
-
-// console.log(circle);
-// console.log(circle.getArea());
-// console.log(circle.getPerimetr());
-// console.log(circle.getDiametr());
-
-function Product(tittle, price, amount) {
-  this.tittle = tittle;
-  this.price = price;
-  this.amount = amount;
-}
-
-function ProductPrototype() {
-  this.getInfo = function () {
-    return `${this.tittle} costs ${this.price} uah`;
-  };
-  this.getTotal = function () {
-    return this.amount * this.price;
-  };
-}
-
-Product.prototype = new ProductPrototype();
-
-const product1 = new Product("Chocolate", 50, 10);
-
-console.log(product1);
-console.log(product1.getInfo());
-console.log(product1.getTotal());
+console.log(event);
+console.log(event.showTittle());
