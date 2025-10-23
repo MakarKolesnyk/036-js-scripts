@@ -1,35 +1,6 @@
-const object = {};
-console.log(object);
+const array1 =[]
+console.log(array1);
 
-function User(name, age, isMale) {
-  this.name = name;
-  this.age = age;
-  this.isMale = isMale;
-}
+const array2 = new Array()
+console.log(array2);
 
-const userPrototype = {
-  getInfo() {
-    return `${this.name} is ${this.age} years old`;
-  },
-  getGender() {
-    return this.isMale ? "male" : "female";
-  },
-};
-
-function UserPrototype() {
-  this.getInfo = function () {
-    return `${this.name} is ${this.age} years old`;
-  };
-  this.getGender = function () {
-    return this.isMale ? "male" : "female";
-  };
-}
-
-User.prototype = new UserPrototype();
-
-const user1 = new User("Alex", 15, true);
-console.log(user1);
-console.log(user1.getInfo());
-console.log(user1.getGender());
-const user2 = new User("Anna", 25, false);
-console.log(user2.getInfo());
