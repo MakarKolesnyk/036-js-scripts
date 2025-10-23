@@ -1,35 +1,60 @@
-const object = {};
-console.log(object);
+// const names = ["Andrey", "Tymur", "Max"];
+// console.log(names.length);
 
-function User(name, age, isMale) {
-  this.name = name;
-  this.age = age;
-  this.isMale = isMale;
-}
+// // add new element to end massive
 
-const userPrototype = {
-  getInfo() {
-    return `${this.name} is ${this.age} years old`;
-  },
-  getGender() {
-    return this.isMale ? "male" : "female";
-  },
-};
+// names.push("Anna", "Misha");
+// console.log(names);
 
-function UserPrototype() {
-  this.getInfo = function () {
-    return `${this.name} is ${this.age} years old`;
-  };
-  this.getGender = function () {
-    return this.isMale ? "male" : "female";
-  };
-}
+// // add new element to start massive
+// names.unshift("Dasha", "Fred");
+// console.log(names);
+// // delete last elemet
+// const delName = names.pop();
+// console.log(delName);
+// console.log(names);
 
-User.prototype = new UserPrototype();
+// // delete first element
+// const firtName = names.shift()
+// console.log(firtName);
+// console.log(names);
 
-const user1 = new User("Alex", 15, true);
-console.log(user1);
-console.log(user1.getInfo());
-console.log(user1.getGender());
-const user2 = new User("Anna", 25, false);
-console.log(user2.getInfo());
+// const seasonOfYear = ["winter", "spring", "summer", "autumn"];
+
+// const addToEnd = seasonOfYear.push("summer");
+// console.log(addToEnd);
+// console.log(seasonOfYear);
+
+// const delFirst = seasonOfYear.shift();
+// console.log(delFirst);
+// console.log(seasonOfYear);
+
+// const addElementToEnd = seasonOfYear.push("winter");
+// console.log(addElementToEnd);
+// console.log(seasonOfYear);
+
+// const addFirstElement = seasonOfYear.unshift("autumn");
+// console.log(addFirstElement);
+// console.log(seasonOfYear);
+
+// const delLast = seasonOfYear.pop();
+// console.log(delLast);
+// console.log(seasonOfYear);
+
+const nameOfFruit = [];
+
+const addToEnd = nameOfFruit.push("apple", "mandarin", "cocos");
+console.log(addToEnd);
+console.log(nameOfFruit);
+
+const addToStart = nameOfFruit.unshift("mango", "banan");
+console.log(addToStart);
+console.log(nameOfFruit);
+
+const delLastElement = nameOfFruit.pop() + " " + nameOfFruit.pop();
+console.log(delLastElement);
+console.log(nameOfFruit);
+
+const addElementToStart = nameOfFruit.unshift("mandarin", "cocos");
+console.log(addElementToStart);
+console.log(nameOfFruit);
